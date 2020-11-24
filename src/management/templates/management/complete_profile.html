@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+{% include "navbar.html" %}
+
+	<div class="container">
+
+<form method='POST'>
+	{% csrf_token %}
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Username ">
+    {# <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> #}
+  </div>
+
+  <div class="form-group">
+    <label for="designation">Designation</label>
+    <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation">
+    {# <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> #}
+  </div>
+
+  <div class="form-group">
+    <label for="police_station">Police Station</label>
+    <input type="text" class="form-control" id="police_station" name="police_station"  placeholder="Police Station">
+    {# <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> #}
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+{% endblock %}
