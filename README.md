@@ -1,1 +1,1 @@
-# Clg_minor
+Criminal Record Management System
